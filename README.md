@@ -69,10 +69,28 @@ Multiple child widgets are the widgets that have more than one son widget inside
 ### 2.2 Stateless Widgets
 Stateless widgets are the widgets that don't have any state. For example, the Text widget is a stateless widget because it doesn't have any state. The following code shows an example of a stateless widget:
 ```dart
-class MyWidget extends StatelessWidget {
+class Frog extends StatelessWidget {
+  // Constructor
+  // If the constructor uses {} then the parameters are optional
+  const Frog({
+    // Key is used to identify the widget
+    Key? key,
+    // This are the parameters of the widget
+    this.color,
+    this.child,
+}) : super(key: key);
+
+  final Color? color;
+  final Widget? child;
+
+  // Build method is used to build the widget, it returns a Widget Tree
   @override
   Widget build(BuildContext context) {
-    return Text('Hello, World!');
+    return Container(color: color, child: child,);
   }
 }
 ```
+
+### 2.3 Stateful Widgets
+Stateful widgets are the widgets that have a state. For example, the Center widget is a stateful widget because it has a state. The following code shows an example of a stateful widget:
+```dart
