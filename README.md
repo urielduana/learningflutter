@@ -151,4 +151,14 @@ Flutter has the following structure:
    5. **dependencies**: The dependencies of the app. This is used to specify the dependencies of the app, for example, the dependencies of the Flutter SDK, the dependencies of the Dart SDK, the dependencies of the Flutter plugins, etc. 
    6. **dev_dependencies**: The dev dependencies of the app. This is used to specify the dependencies of the app that are only used in development, for example, the dependencies of the Flutter SDK, the dependencies of the Dart SDK, the dependencies of the Flutter plugins, etc. 
    7. **flutter**: The flutter configuration of the app. This is used to specify the configuration of the app, for example, the assets, the fonts, the uses-material-design, etc.
-2. **
+2. **test/**: This folder is used to store the tests of the app.
+3. **lib/**: This folder is used to store the code of the app. Stores all the dart files of the app.
+4. **ios/**: This folder is used to store the code of the app for iOS. Stores all the configuration files of the app for iOS.
+5. **android/**: This folder is used to store the code of the app for Android.
+   1. **src/main/AndroidManifest.xml**: This file is used to configure the app for Android, for example, the name, the version, the description, the permissions, etc.
+   2. **src/debug/AndroidManifest.xml**: This file is used to configure the app for Android in debug mode, for example, the name, the version, the description, the permissions, etc. It has a special permission to allow the app to connect with internet, this permission it is needed to be copied in the release AndroidManifest.xml.
+   3. **build.gradle**: This file is used to configure the app for Android, for example, the name, the version, the description, the permissions, etc.
+> It is important to know that the ios/ and android/ files with flutter we will not touch them a lot, because the Flutter SDK will manage them for us and also is though to use plugins to do the work for us.
+6. **web/**: This folder is used to store the code of the app for Web.
+7. **windows/**: This folder is used to store the code of the app Desktop for Windows.
+8. 
