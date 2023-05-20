@@ -41,3 +41,28 @@ Widget trees are the way that Flutter builds the UI. It is the way that widgets 
 
 ![Tux, the Linux mascot](/assets/images/WidgetTree.webp)
 
+#### 2.1.1 Leaf Widgets
+Leaf widgets are the widgets that don't have any son widget inside. For example, the Text widget is a leaf widget because it doesn't have any son widget inside. The following image shows an example of a leaf widget:
+- Image
+- Text
+- RichText
+- Icon
+
+#### 2.1.2 Single Child Widgets
+Single child widgets are the widgets that have only one son widget inside. For example, the Center widget is a single child widget because it has only one son widget inside. The following image shows an example of a single child widget:
+- Center
+- Container
+- Padding
+- RaisedButton/ElavatedButton
+- Align
+- Positioned
+
+#### 2.1.3 Multiple Child Widgets
+Multiple child widgets are the widgets that have more than one son widget inside. For example, the Row widget is a multiple child widget because it has more than one son widget inside. The following image shows an example of a multiple child widget:
+- Row
+- Column
+- Stack
+- Wrap
+- ListView
+- GridView
+
