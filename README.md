@@ -116,6 +116,7 @@ class _BirdState extends State<Bird> {
     double _size = 100;
     // This method is used to update the state of the widget
     void grown(){
+      // setState is called to update the render of the widget and then call the build method
       setState(() { _size += 10; });
     }
     
@@ -130,3 +131,10 @@ class _BirdState extends State<Bird> {
     }
   }
 ```
+
+#### 2.3.1 Global State
+Sometimes the app has too much parts that need to be updated constantly and individually, this makes that the Stateful Widgets are not the best option. For that reason, Flutter has the concept of Global State, which is a state that can be shared between widgets. The following architecture pattern is used to implement the Global State:
+- Provider
+- Bloc **(Most used)**
+- Scoped Model
+- Vanilla
