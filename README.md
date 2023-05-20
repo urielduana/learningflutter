@@ -4,7 +4,7 @@ In the way to learn Flutter, I'm going to create a simple app that will use the 
  - [Flutter Documentation](https://flutter.dev/docs)
  - [Flutter Widgets](https://flutter.dev/docs/development/ui/widgets)
  - ["Aprendiendo Flutter desde Cero para Creación de Aplicación Móvil Nativas" by midulive](https://www.youtube.com/watch?v=2uZjsHFob5s)
-
+ - ["Curso Introducción a Flutter" by Chia TK](https://www.youtube.com/playlist?list=PLl_hIu4u7P677H9f6zPOHiOz2izkvQq2E)
 
 ## 1. What is Flutter?
 
@@ -19,5 +19,25 @@ Flutter uses Dart as its programming language. Dart is a modern, object-oriented
 - Supports top-level functions, variables, and classes
 - Supports functions inside functions
 
-## 2. 
+## 2. Widgets
+
+It is an element of the GUI (Graphi User Interface) that shows information or gives a specific way to interact with the user.
+Widgets includes the following:
+- Text
+- Buttons
+- Gestures
+- Images
+- Inputs
+- Containers
+- Icons
+- Windows
+- Forms
+- etc.
+
+On Flutter everyting is a widget, even the app itself is a widget. Every widget is a piece of a complex user interface. Widgets are nested inside each other to create the user interface. On Flutter already exists a lot of widgets, but you can create your own widgets.
+
+### 2.1 Widget Tree
+Widget trees are the way that Flutter builds the UI. It is the way that widgets are nested inside each other, for example, exists a main widget and then you can nest a son widget inside the main. For that reason, from the trunk or main widgets are created branches of widwets. The following image shows an example of a widget tree:
+
+![Tux, the Linux mascot](/assets/images/WidgetTree.webp)
 
