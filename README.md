@@ -66,3 +66,13 @@ Multiple child widgets are the widgets that have more than one son widget inside
 - ListView
 - GridView
 
+### 2.2 Stateless Widgets
+Stateless widgets are the widgets that don't have any state. For example, the Text widget is a stateless widget because it doesn't have any state. The following code shows an example of a stateless widget:
+```dart
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Text('Hello, World!');
+  }
+}
+```
