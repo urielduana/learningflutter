@@ -94,3 +94,39 @@ class Frog extends StatelessWidget {
 ### 2.3 Stateful Widgets
 Stateful widgets are the widgets that have a state. For example, the Center widget is a stateful widget because it has a state. The following code shows an example of a stateful widget:
 ```dart
+class Bird extends StatefulWidget {
+    // Constructor
+    const Bird({
+        Key? key,
+        this.color,
+        this.child,
+    }) : super(key: key);
+    
+    final Color? color;
+    final Widget? child;
+    
+    // This method is used to create the state of the widget
+    @override
+    _BirdState createState() => _BirdState();
+    }
+    
+    
+class _BirdState extends State<Bird> {
+  // This is the state of the widget
+    double _size = 100;
+    // This method is used to update the state of the widget
+    void grown(){
+      setState(() { _size += 10; });
+    }
+    
+    @override
+    Widget build(BuildContext context) {
+      return Container{
+        color: widget.color,
+      // This is the state of the widget
+        transform: Matrix4.diagonal3Values(_size, _size, 1),
+        child: widget.child,
+      };
+    }
+  }
+```
