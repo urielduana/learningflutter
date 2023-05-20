@@ -143,12 +143,12 @@ Sometimes the app has too much parts that need to be updated constantly and indi
 
 Flutter has the following structure:
 
-- **pubspec.yaml**: This file is used to configure the app, for example, the name, version, description, dependencies, etc.
-  - name: The name of the app
-  - description: The description of the app
-  - version: The version of the app. The description is composed by 3 numbers separated by dots, for example, 1.0.0. The first number is the major version, the second number is the minor version and the third number is the patch version. The major version is used when the app has a lot of changes, the minor version is used when the app has some changes and the patch version is used when the app has a few changes. Next of this numbers exist the syntax +<number>, for example, 1.0.0+1. This number is used to identify the build of the app.
-  - environment: The environment of the app. This is used to specify the version of the SDK that the app uses.
-  - dependencies: The dependencies of the app. This is used to specify the dependencies of the app, for example, the dependencies of the Flutter SDK, the dependencies of the Dart SDK, the dependencies of the Flutter plugins, etc.
-  - dev_dependencies: The dev dependencies of the app. This is used to specify the dependencies of the app that are only used in development, for example, the dependencies of the Flutter SDK, the dependencies of the Dart SDK, the dependencies of the Flutter plugins, etc.
-  - flutter: The flutter configuration of the app. This is used to specify the configuration of the app, for example, the assets, the fonts, the uses-material-design, etc.
-  - 
+1. **pubspec.yaml**: This file is used to configure the app, for example, the name, version, description, dependencies, etc. 
+   1. name: The name of the app 
+   2. description: The description of the app 
+   3. version: The version of the app. The description is composed by 3 numbers separated by dots, for example, 1.0.0. The first number is the major version, the second number is the minor version and the third number is the patch version. The major version is used when the app has a lot of changes, the minor version is used when the app has some changes and the patch version is used when the app has a few changes. Next of this numbers exist the syntax +<number>, for example, 1.0.0+1. This number is used to identify the build of the app. 
+   4. environment: The environment of the app. This is used to specify the version of the SDK that the app uses. 
+   5. dependencies: The dependencies of the app. This is used to specify the dependencies of the app, for example, the dependencies of the Flutter SDK, the dependencies of the Dart SDK, the dependencies of the Flutter plugins, etc. 
+   6. dev_dependencies: The dev dependencies of the app. This is used to specify the dependencies of the app that are only used in development, for example, the dependencies of the Flutter SDK, the dependencies of the Dart SDK, the dependencies of the Flutter plugins, etc. 
+   7. flutter: The flutter configuration of the app. This is used to specify the configuration of the app, for example, the assets, the fonts, the uses-material-design, etc.
+2. **
