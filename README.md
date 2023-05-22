@@ -158,7 +158,20 @@ Flutter has the following structure:
    1. **src/main/AndroidManifest.xml**: This file is used to configure the app for Android, for example, the name, the version, the description, the permissions, etc.
    2. **src/debug/AndroidManifest.xml**: This file is used to configure the app for Android in debug mode, for example, the name, the version, the description, the permissions, etc. It has a special permission to allow the app to connect with internet, this permission it is needed to be copied in the release AndroidManifest.xml.
    3. **build.gradle**: This file is used to configure the app for Android, for example, the name, the version, the description, the permissions, etc.
-> It is important to know that the ios/ and android/ files with flutter we will not touch them a lot, because the Flutter SDK will manage them for us and also is though to use plugins to do the work for us.
+> It is important to know that the ios/, android/, web/, windows/, etc. files with flutter we will not touch them a lot, because the Flutter SDK will manage them for us and also is though to use plugins to do the work.
 6. **web/**: This folder is used to store the code of the app for Web.
 7. **windows/**: This folder is used to store the code of the app Desktop for Windows.
-8. 
+
+## 4. Starting the Basics
+
+1. **MaterialApp**: It is a predifined class of the system and it is used as one of the main component of the Flutter's SDK. MaterialApp allows the acces to the other resources and widget that Flutter offers.
+2. **title**: It is a property of MaterialApp and it is used to set the title of the app. This title is used in the app bar of the app.
+3. **home**: It is a property of MaterialApp and it is used to set the home of the app. This home is the first screen that the app shows.
+4. **Scaffold()**: It is a predifined class of the system and it is used as one of the main component of the Flutter's SDK. Scaffold is used to create a basic structure of the app, for example, the app bar, the body, the floating action button, etc.
+5. **Text()**: Is used to create a text widget. Text only receives a string as parameter.
+6. **Center()**: Is used to center the widget that is inside of it.
+7. **child**: It is a property of Scaffold and it is used to set the child of the Scaffold. This child is the body of the Scaffold.
+8. **body**: It is a property of Scaffold and it is used to set the body of the Scaffold. This body is the body of the Scaffold.
+9. **style**: It is a property of Text and it is used to set the style of the Text. This style is the style of the Text.
+10. **TextStyle()**: Is used to create a text style. TextStyle receives a color, a font size, a font weight, a font style, a font family, a background color, a decoration, a decoration color, a decoration style, a decoration thickness, a decoration position, a word spacing, a letterSpacing, a height, a locale, a foreground, a background, a shadows, a font features, a text baseline, a text decoration, a text decoration color, a text decoration style, a text decoration thickness, a text decoration line, a text decoration color, a text decoration style, a text de
+11. **AppBar()**: Is used to create an app bar widget.
