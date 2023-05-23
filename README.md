@@ -164,7 +164,7 @@ Flutter has the following structure:
 
 ## 4. Starting the Basics
 
-1. **MaterialApp**: It is a predifined class of the system and it is used as one of the main component of the Flutter's SDK. MaterialApp allows the acces to the other resources and widget that Flutter offers.
+1. **MaterialApp()**: It is a predifined class of the system and it is used as one of the main component of the Flutter's SDK. MaterialApp allows the acces to the other resources and widget that Flutter offers.
 2. **title**: It is a property of MaterialApp and it is used to set the title of the app. This title is used in the app bar of the app.
 3. **home**: It is a property of MaterialApp and it is used to set the home of the app. This home is the first screen that the app shows.
 4. **Scaffold()**: It is a predifined class of the system and it is used as one of the main component of the Flutter's SDK. Scaffold is used to create a basic structure of the app, for example, the app bar, the body, the floating action button, etc.
@@ -175,3 +175,85 @@ Flutter has the following structure:
 9. **style**: It is a property of Text and it is used to set the style of the Text. This style is the style of the Text.
 10. **TextStyle()**: Is used to create a text style. TextStyle receives a color, a font size, a font weight, a font style, a font family, a background color, a decoration, a decoration color, a decoration style, a decoration thickness, a decoration position, a word spacing, a letterSpacing, a height, a locale, a foreground, a background, a shadows, a font features, a text baseline, a text decoration, a text decoration color, a text decoration style, a text decoration thickness, a text decoration line, a text decoration color, a text decoration style, a text de
 11. **AppBar()**: Is used to create an app bar widget.
+
+Next is the code example created with this concepts:
+
+```dart
+import 'package:flutter/material.dart';
+
+// This is the main function of the app
+void main() {
+  runApp(MyApp());
+}
+
+// This is the root widget of the app
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      // Title showed in the task manager
+      title: 'Flutter Demo',
+      // Theme of the app
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: MyHomePage(),
+    );
+  }
+}
+
+// This is the home page of the app. Stateless widget is used because the content of the page is not changed
+class MyHomePage extends StatelessWidget {
+  MyHomePage();
+
+  @override
+  // This widget is the home page of your application.
+  Widget build(BuildContext context) {
+    // Scaffold is a widget that provides a default app bar, title, and a body property that holds the widget tree for the home screen.
+    return Scaffold(
+        // AppBar is a widget that is used to create Android-style top bars.
+        appBar: AppBar(
+          title: const Center(
+              child: Text(
+            "My AppBar",
+            style: TextStyle(color: Colors.red),
+          )),
+        ),
+        // body is the major part of the screen.
+        // Center is a widget that centers its child widget.
+        body: const Center(
+          // Text is a widget that is used to display a string of text with single style.
+          child: Text(
+            "Hello World",
+            // style property is used to style the text.
+            // TextStyle is a class that is used to style the text.
+            style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: Colors.blue,
+                backgroundColor: Colors.yellow),
+          ),
+        ));
+  }
+}
+```
+
+## 5. Network Images
+
+Network images are images that are stored in a server and are accessed through a URL. To use network images we need to use the widget Image.network().
+
+```dart
+body: Center(
+          child: Container(
+              child: Image.network(
+                // Image URL
+                // Also you  can use gifs and svg images
+                  "https://avatars.githubusercontent.com/u/81336230?v=4",
+              // fit is used to set the image fit in the container 
+              fit: BoxFit.fill,
+              height: 200,
+              width: 500,
+              )),
+        ),
+```

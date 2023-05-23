@@ -1,45 +1,29 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  MyHomePage();
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
+      title: 'Material App',
+      home: Scaffold(
         appBar: AppBar(
-          title: const Center(
-              child: Text(
-            "My AppBar",
-            style: TextStyle(color: Colors.red),
-          )),
+          title: Text('Material App Bar'),
         ),
-        body: const Center(
-          child: Text(
-            "Hello World",
-            style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-                color: Colors.blue,
-                backgroundColor: Colors.yellow),
-          ),
-        ));
+        body: Center(
+          child: Container(
+              child: Image.network(
+                // Image URL
+                // Also you  can use gifs and svg images
+                  "https://avatars.githubusercontent.com/u/81336230?v=4",
+              // fit is used to set the image fit in the container
+              fit: BoxFit.fill,
+              height: 200,
+              width: 500,
+              )),
+        ),
+      ),
+    );
   }
 }
