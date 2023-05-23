@@ -257,3 +257,23 @@ body: Center(
               )),
         ),
 ```
+Network images has some properties that can be used to customize the image:
+1. **fit**: It is used to set the image fit in the container. Fit also has some values that can be used:
+   1. **BoxFit.fill**: It is used to fill the container with the image.
+   2. **BoxFit.contain**: It is used to contain the image in the container.
+   3. **BoxFit.cover**: It is used to cover the container with the image.
+   4. **BoxFit.fitWidth**: It is used to fit the width of the image in the container.
+   5. **BoxFit.fitHeight**: It is used to fit the height of the image in the container.
+   6. **BoxFit.none**: It is used to not fit the image in the container.
+   7. **BoxFit.scaleDown**: It is used to scale down the image in the container.
+2. **height**: It is used to set the height of the image.
+3. **width**: It is used to set the width of the image.
+4. **repeat**: It is used to set the repeat of the image. Repeat also has some values that can be used:
+   1. **ImageRepeat.noRepeat**: It is used to not repeat the image.
+   2. **ImageRepeat.repeat**: It is used to repeat the image.
+   3. **ImageRepeat.repeatX**: It is used to repeat the image in the X axis.
+   4. **ImageRepeat.repeatY**: It is used to repeat the image in the Y axis.
+5. **color**: It is used to set the color of the image.
+...
+
+## 6. Icons
