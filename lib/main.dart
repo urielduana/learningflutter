@@ -12,8 +12,12 @@ class MyApp extends StatelessWidget {
           title: Text('Material App Bar'),
         ),
         body: const Center(
-          
-        ),
+            child: IconButton(
+          icon: const Icon(Icons.android),
+          color: Colors.green,
+          onPressed: null,
+          iconSize: 100,
+        )),
       ),
     );
   }

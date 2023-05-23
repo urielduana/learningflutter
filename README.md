@@ -290,14 +290,12 @@ Icons are images that are used to represent an action or a product. To use icons
 Also exist the widget IconButton() that is used to create an icon that can be pressed.
 
 ```dart
-          child: IconButton(
-            icon: Icon(Icons.remove_circle_outline),
-            color: Colors.red,
-            iconSize: 200,
-            onPressed: () {
-              print("Icon pressed");
-            },
-          ),
+    child: IconButton(
+      icon: const Icon(Icons.android),
+      color: Colors.green,
+      onPressed: null,
+      iconSize: 100,
+      )
 ```
 Icons has some properties that can be used to customize the icon:
 1. **icon**: It is used to set the icon of the icon button.
